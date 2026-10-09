@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro | NEXT FIGHT</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+<a class="brand" href="index.html"><img src="logo-next-fight.png" alt="Logo NEXT FIGHT"></a>
+<nav>
+<a href="index.html">Início</a>
+<a href="modalidades.html">Modalidades</a>
+<a href="planos.html">Planos</a>
+<a href="horarios.html">Horários</a>
+<a href="contato.html">Contato</a>
+<a class="active" href="cadastro.html">Cadastro</a>
+<a href="ia.html">IA</a>
+</nav>
+<button id="modoBtn" class="theme-btn">Modo Escuro</button>
+</header>
+
+<main>
+<section class="page-head">
+<p class="eyebrow">FAÇA PARTE DA NEXT FIGHT</p>
+<h1>Cadastro de aluno</h1>
+<p>Preencha seus dados e escolha a modalidade que deseja praticar.</p>
+</section>
+
+<section class="cadastro-grid">
+<form id="cadastroForm" class="registration-form">
+<h2 id="tituloFormulario">Seus dados</h2>
+<input id="cadastroId" type="hidden">
+
+<div class="form-row">
+<div>
+<label for="cadNome">Nome completo *</label>
+<input id="cadNome" type="text" placeholder="Digite seu nome completo" required>
+</div>
+<div>
+<label for="cadNascimento">Data de nascimento *</label>
+<input id="cadNascimento" type="date" required>
+</div>
+</div>
+
+<div class="form-row">
+<div>
+<label for="cadEmail">E-mail *</label>
+<input id="cadEmail" type="email" placeholder="Digite seu e-mail" required>
+</div>
+<div>
+<label for="cadTelefone">Telefone *</label>
+<input id="cadTelefone" type="tel" placeholder="(00) 00000-0000" required>
+</div>
+</div>
+
+<label for="cadModalidade">Modalidade *</label>
+<select id="cadModalidade" required>
+<option value="">Selecione uma modalidade</option>
+<option>Boxe</option><option>Muay Thai</option><option>Jiu-Jitsu</option>
+<option>Judô</option>
+</select>
+
+<label for="cadPlano">Plano desejado *</label>
+<select id="cadPlano" required>
+<option value="">Selecione um plano</option>
+<option>Plano Básico - R$ 99,90</option>
+<option>Plano Fighter - R$ 149,90</option>
+<option>Plano Profissional - R$ 199,90</option>
+</select>
+
+<label for="cadNivel">Nível atual *</label>
+<select id="cadNivel" required>
+<option value="">Selecione seu nível</option>
+<option>Iniciante</option><option>Intermediário</option><option>Avançado</option>
+</select>
+
+<label for="cadObservacao">Observações</label>
+<textarea id="cadObservacao" rows="4" placeholder="Conte algo que gostaria que a academia soubesse..."></textarea>
+
+<div class="form-actions">
+<button id="botaoCadastro" class="btn" type="submit">FINALIZAR CADASTRO</button>
+<button id="cancelarEdicao" class="btn outline dark-outline hidden" type="button">CANCELAR EDIÇÃO</button>
+</div>
+<p id="mensagemCadastro" class="message" role="status"></p>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>

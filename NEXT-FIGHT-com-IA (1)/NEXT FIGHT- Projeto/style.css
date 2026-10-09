@@ -1,0 +1,1306 @@
+/* =========================================================
+   RESET / CONFIGURAÇÕES GERAIS
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #111;
+    line-height: 1.6;
+    transition: 0.3s;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+
+/* =========================================================
+   HEADER / NAVEGAÇÃO
+   ========================================================= */
+
+.header {
+    min-height: 82px;
+    background: #050505;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 6%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    gap: 20px;
+}
+
+.brand img {
+    width: 115px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.header nav {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+.header nav a {
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.header nav a:hover,
+.header nav a.active {
+    color: #e50914;
+}
+
+.theme-btn {
+    background: #e50914;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   BOTÕES
+   ========================================================= */
+
+.btn {
+    display: inline-block;
+    background: #e50914;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+
+    padding: 13px 21px;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    background: #b8060f;
+}
+
+.btn.outline {
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+.btn.outline:hover {
+    background: #fff;
+    color: #111;
+}
+
+.btn.white {
+    background: #fff;
+    color: #111;
+}
+
+.creative-btn {
+    border: 0;
+    background: #111;
+    color: #fff;
+
+    padding: 11px 15px;
+    border-radius: 4px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.creative-btn:hover {
+    background: #e50914;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+    min-height: 620px;
+
+    background: linear-gradient(
+        105deg,
+        #050505 0%,
+        #101010 58%,
+        #e50914 100%
+    );
+
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 70px 8%;
+    gap: 50px;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.eyebrow {
+    color: #e50914;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 70px;
+    line-height: 0.98;
+    margin: 14px 0 24px;
+}
+
+.hero h1 span {
+    color: #e50914;
+}
+
+.hero-text > p:not(.eyebrow) {
+    color: #ddd;
+    max-width: 570px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.hero-card {
+    width: 370px;
+    height: 370px;
+
+    background: #050505;
+    border: 2px solid #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: rotate(2deg);
+    box-shadow: 0 20px 50px #0008;
+}
+
+.hero-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   SEÇÕES
+   ========================================================= */
+
+.section {
+    padding: 75px 8%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2,
+.page-head h1 {
+    font-size: 40px;
+}
+
+
+/* =========================================================
+   CARDS / GRID
+   ========================================================= */
+
+.feature-grid,
+.martial-grid,
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.feature {
+    padding: 28px;
+    background: #f4f4f4;
+    border-top: 4px solid #e50914;
+    border-radius: 7px;
+}
+
+.feature span,
+.martial-card > span {
+    font-size: 42px;
+}
+
+.feature h3 {
+    margin: 10px 0;
+}
+
+
+/* =========================================================
+   BANNER VERMELHO
+   ========================================================= */
+
+.red-banner {
+    background: #e50914;
+    color: #fff;
+
+    padding: 55px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+/* =========================================================
+   CABEÇALHO DE PÁGINA
+   ========================================================= */
+
+.page-head {
+    text-align: center;
+    background: #111;
+    color: #fff;
+    padding: 80px 20px;
+}
+
+.page-head h1 {
+    margin: 8px 0 10px;
+}
+
+.page-head p:last-child {
+    color: #ccc;
+}
+
+
+/* =========================================================
+   MODALIDADES / ARTES MARCIAIS
+   ========================================================= */
+
+.martial-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.martial-card {
+    background: #f4f4f4;
+    border-radius: 8px;
+    padding: 25px;
+
+    border-top: 4px solid #e50914;
+
+    transition: 0.2s;
+}
+
+.martial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px #0001;
+}
+
+.martial-card h2 {
+    margin: 8px 0;
+}
+
+.martial-card p {
+    color: #555;
+    min-height: 70px;
+}
+
+
+/* =========================================================
+   INFORMAÇÕES DOS TREINOS
+   ========================================================= */
+
+.training-info {
+    display: none;
+
+    margin-top: 15px;
+    padding: 13px;
+
+    background: #111;
+    color: #fff;
+
+    border-left: 4px solid #e50914;
+    border-radius: 4px;
+
+    font-size: 14px;
+}
+
+.training-info.show {
+    display: block;
+}
+
+.training-info strong {
+    color: #e50914;
+}
+
+
+/* =========================================================
+   PLANOS / PREÇOS
+   ========================================================= */
+
+.pricing-grid {
+    margin-bottom: 45px;
+}
+
+.price-card {
+    position: relative;
+
+    text-align: center;
+
+    padding: 35px;
+
+    background: #f4f4f4;
+    border-radius: 8px;
+    border-top: 4px solid #e50914;
+}
+
+.price-card h2 {
+    font-size: 27px;
+}
+
+.price-card strong {
+    display: block;
+
+    color: #e50914;
+    font-size: 32px;
+
+    margin: 20px 0;
+}
+
+.price-card .btn {
+    margin-top: 5px;
+}
+
+.price-card.featured {
+    border: 3px solid #e50914;
+}
+
+.tag {
+    display: inline-block;
+
+    background: #e50914;
+    color: #fff;
+
+    padding: 5px 10px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    border-radius: 3px;
+}
+
+
+/* =========================================================
+   CALCULADORA
+   ========================================================= */
+
+.calculator {
+    max-width: 650px;
+    margin: auto;
+
+    background: #111;
+    color: #fff;
+
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.calculator h2 {
+    margin-bottom: 18px;
+}
+
+.calculator select {
+    width: 100%;
+
+    padding: 13px;
+    margin: 10px 0 20px;
+
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.total {
+    padding: 18px;
+
+    border-left: 5px solid #e50914;
+    background: #1d1d1d;
+}
+
+.total strong {
+    display: block;
+    color: #e50914;
+    font-size: 28px;
+}
+
+
+/* =========================================================
+   TABELA DE HORÁRIOS
+   ========================================================= */
+
+.schedule {
+    overflow-x: auto;
+}
+
+.schedule table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+}
+
+.schedule th,
+.schedule td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.schedule th {
+    background: #111;
+    color: #fff;
+}
+
+.schedule tr:nth-child(even) {
+    background: #f5f5f5;
+}
+
+.note {
+    margin-top: 15px;
+    color: #666;
+}
+
+
+/* =========================================================
+   PÁGINA DE CONTATO
+   ========================================================= */
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+.contact-info,
+.contact-form {
+    background: #f4f4f4;
+    padding: 30px;
+
+    border-radius: 8px;
+    border-top: 4px solid #e50914;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    margin-bottom: 25px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 15px;
+    margin: 18px 0;
+}
+
+.contact-item span {
+    font-size: 25px;
+}
+
+.contact-item p {
+    color: #555;
+}
+
+.contact-note {
+    font-size: 13px;
+    color: #777;
+    margin-top: 25px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin: 13px 0 6px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    background: #fff;
+    color: #111;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .btn {
+    width: 100%;
+    margin-top: 18px;
+}
+
+
+/* =========================================================
+   RODAPÉ
+   ========================================================= */
+
+footer {
+    background: #050505;
+    color: #fff;
+
+    text-align: center;
+
+    padding: 35px 20px;
+}
+
+footer img {
+    width: 130px;
+    height: 75px;
+    object-fit: contain;
+}
+
+footer p {
+    color: #ccc;
+}
+
+.small {
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+
+/* =========================================================
+   PÁGINA DE CADASTRO
+   ========================================================= */
+
+.registration-layout {
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+
+    gap: 30px;
+    align-items: start;
+}
+
+.registration-form,
+.registration-side {
+    background: #f4f4f4;
+    color: #111;
+    padding: 30px;
+    border-radius: 8px;
+    border-top: 4px solid #e50914;
+}
+
+.registration-form h2,
+.registration-side h2 {
+    color:#fff;
+    margin-bottom: 22px;
+}
+
+.registration-form label {
+    display: block;
+    font-weight: bold;
+    margin: 14px 0 6px;
+}
+
+.registration-form input,
+.registration-form select,
+.registration-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    color: #111;
+}
+
+.registration-form textarea {
+    resize: vertical;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.registration-form .btn {
+    width: 100%;
+    margin-top: 22px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.form-actions .btn {
+    flex: 1;
+}
+
+.registration-side {
+    background: #111;
+    color: #fff;
+    text-align: center;
+}
+
+.registration-side img {
+    width: 210px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.registration-side p {
+    color: #ccc;
+}
+
+.registration-points {
+    text-align: left;
+    margin-top: 25px;
+}
+
+.registration-points p {
+    color: #fff;
+    margin: 12px 0;
+}
+
+.registration-points p::first-letter {
+    color: #e50914;
+}
+
+
+
+
+/* =========================================================
+   TABELA DE CADASTROS
+   ========================================================= */
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.registration-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 850px;
+}
+
+.registration-table th,
+.registration-table td {
+    padding: 14px 12px;
+
+    text-align: left;
+
+    border-bottom: 1px solid #ddd;
+
+    vertical-align: middle;
+}
+
+.registration-table th {
+    background: #111;
+    color: #fff;
+
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.registration-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.registration-table td small {
+    display: block;
+
+    color: #777;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   AÇÕES DA TABELA
+   ========================================================= */
+
+.action-buttons {
+    white-space: nowrap;
+}
+
+.action-buttons button,
+.status-badge {
+    border: 0;
+    background: none;
+
+    color: #e50914;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    padding: 4px 6px;
+}
+
+.action-buttons button:hover {
+    text-decoration: underline;
+}
+
+.action-buttons .danger {
+    color: #777;
+}
+
+.status-badge {
+    border-radius: 20px;
+
+    background: #daf5df;
+    color: #16702b;
+
+    padding: 4px 10px;
+
+    font-size: 12px;
+}
+
+.status-badge.inativo {
+    background: #eee;
+    color: #666;
+}
+
+.empty-state {
+    text-align: center;
+    color: #777;
+    padding: 35px !important;
+}
+
+.management-note {
+    margin-top: 14px;
+
+    color: #777;
+    font-size: 13px;
+}
+
+
+
+/* =========================================================
+   CADASTRO — LAYOUT PRINCIPAL
+   ========================================================= */
+
+.cadastro-grid {
+    width: 900px;
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    color: #151515;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cadastro-grid input,
+.cadastro-grid select,
+.cadastro-grid textarea {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #151515;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cadastro-grid input::placeholder,
+.cadastro-grid textarea::placeholder {
+    color: #777777;
+}
+
+/* Títulos e rótulos no modo claro */
+.cadastro-grid h1,
+.cadastro-grid h2,
+.cadastro-grid h3,
+.cadastro-grid label {
+    color: #151515;
+}
+
+.cadastro-grid .management-section {
+    padding-top: 30px;
+}
+
+
+/* =========================================================
+   MODO ESCURO
+   ========================================================= */
+
+.dark {
+    background-color: #151515;
+    color: #ffffff;
+}
+
+.dark .feature,
+.dark .martial-card,
+.dark .price-card,
+.dark .contact-info,
+.dark .contact-form,
+.dark .registration-form,
+.dark .cadastro-grid {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+/* Títulos e textos */
+.dark .cadastro-grid h1,
+.dark .cadastro-grid h2,
+.dark .cadastro-grid h3,
+.dark .cadastro-grid label,
+.dark .registration-form h2,
+.dark .registration-form label,
+.dark .registration-side h2 {
+    color: #ffffff;
+}
+
+.dark .martial-card p,
+.dark .feature p,
+.dark .contact-item p,
+.dark .registration-form p {
+    color: #cccccc;
+}
+
+/* Campos de formulário */
+.dark .cadastro-grid input,
+.dark .cadastro-grid select,
+.dark .cadastro-grid textarea,
+.dark .contact-form input,
+.dark .contact-form select,
+.dark .contact-form textarea,
+.dark .calculator select,
+.dark .registration-form input,
+.dark .registration-form select,
+.dark .registration-form textarea,
+.dark .management-toolbar input,
+.dark .management-toolbar select {
+    background-color: #333333;
+    color: #ffffff;
+    border-color: #555555;
+}
+
+.dark .cadastro-grid input::placeholder,
+.dark .cadastro-grid textarea::placeholder {
+    color: #bbbbbb;
+}
+
+/* Área de gerenciamento */
+.dark .registration-side {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.dark .cadastro-grid .management-section,
+.dark .management-card,
+.dark .registration-table tr:nth-child(even) {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+/* Tabelas */
+.dark .schedule td {
+    border-color: #444444;
+}
+
+.dark .schedule tr:nth-child(even) {
+    background-color: #222222;
+}
+
+.dark .registration-table td {
+    border-color: #444444;
+}
+
+.dark .registration-table td small {
+    color: #bbbbbb;
+}
+
+.dark-outline {
+    border-color: #555555 !important;
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   CLASSES AUXILIARES
+   ========================================================= */
+
+.message {
+    text-align: center;
+    font-weight: bold;
+    color: #e50914;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+@media (max-width: 1000px) {
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .header nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 800px;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .feature-grid,
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .martial-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .cadastro-grid {
+        grid-template-columns: 1fr;
+        max-width: 90%;
+    }
+}
+
+/* =========================================================
+   RESPONSIVIDADE - ATÉ 800PX
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .registration-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .management-heading {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .management-heading .btn {
+        width: 100%;
+    }
+
+    .management-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .management-toolbar {
+        grid-template-columns: 1fr;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE - ATÉ 600PX
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero-card {
+        width: 270px;
+        height: 270px;
+    }
+
+    .section {
+        padding: 55px 5%;
+    }
+
+    .martial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .red-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header {
+        padding: 8px 4%;
+    }
+
+    .header nav {
+        gap: 12px;
+    }
+
+    .header nav a {
+        font-size: 13px;
+    }
+
+    .page-head h1 {
+        font-size: 30px;
+    }
+
+    .cadastro-grid {
+        padding: 55px 5%;
+    }
+
+    .cadastro-grid .registration-form,
+    .cadastro-grid .management-section {
+        padding: 22px;
+    }
+}
+/* =========================================================
+   NEXT FIGHT IA - ASSISTENTE
+   ========================================================= */
+
+.ia-section {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 20px 32px 70px;
+}
+
+.ia-chat {
+    background: #f7f7f7;
+    border: 1px solid #e5e5e5;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.ia-messages {
+    padding: 32px 28px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.ia-msg {
+    max-width: 88%;
+    line-height: 1.55;
+    font-size: 15px;
+}
+
+.ia-msg.bot {
+    align-self: flex-start;
+}
+
+.ia-msg.user {
+    align-self: flex-end;
+    background: #e50914;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 18px 18px 4px 18px;
+}
+
+.ia-bot-bubble {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 14px 18px;
+    border-radius: 4px 18px 18px 18px;
+    color: #222;
+}
+
+.ia-bot-bubble strong {
+    color: #e50914;
+}
+
+.ia-quick {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 28px 22px;
+}
+
+.ia-quick-btn {
+    background: transparent;
+    border: 1px solid #ccc;
+    color: #333;
+    padding: 10px 16px;
+    border-radius: 50px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.ia-quick-btn:hover {
+    border-color: #e50914;
+    color: #e50914;
+    background: rgba(229, 9, 20, 0.06);
+}
+
+.ia-input-area {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 18px 22px;
+    border-top: 1px solid #e5e5e5;
+    background: #fff;
+}
+
+.ia-input-area input {
+    flex: 1;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    padding: 13px 18px;
+    border-radius: 50px;
+    outline: none;
+    font-size: 15px;
+    transition: border-color 0.2s;
+}
+
+.ia-input-area input:focus {
+    border-color: #e50914;
+}
+
+.ia-send-btn {
+    width: 46px;
+    height: 46px;
+    border: 0;
+    border-radius: 50%;
+    background: #e50914;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.ia-send-btn:hover {
+    background: #b8060f;
+    transform: scale(1.05);
+}
+
+.ia-disclaimer {
+    text-align: center;
+    color: #888;
+    font-size: 13px;
+    margin-top: 18px;
+}
+
+/* Dark mode - IA */
+.dark .ia-chat {
+    background: #1a1a1a;
+    border-color: #2a2a2a;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.45);
+}
+
+.dark .ia-bot-bubble {
+    background: #222;
+    border-color: #333;
+    color: #eee;
+}
+
+.dark .ia-quick-btn {
+    border-color: #444;
+    color: #ddd;
+}
+
+.dark .ia-quick-btn:hover {
+    border-color: #e50914;
+    color: #e50914;
+    background: rgba(229, 9, 20, 0.12);
+}
+
+.dark .ia-input-area {
+    background: #111;
+    border-top-color: #2a2a2a;
+}
+
+.dark .ia-input-area input {
+    background: #1a1a1a;
+    border-color: #333;
+    color: #fff;
+}
+
+.dark .ia-input-area input::placeholder {
+    color: #777;
+}
+
+.dark .ia-disclaimer {
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    .ia-section {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .ia-messages {
+        padding: 22px 18px;
+        min-height: 220px;
+    }
+    .ia-quick {
+        padding: 0 18px 16px;
+    }
+    .ia-input-area {
+        padding: 14px 16px;
+    }
+}

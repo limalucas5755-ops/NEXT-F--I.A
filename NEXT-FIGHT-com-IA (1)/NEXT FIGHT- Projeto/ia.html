@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Fight IA | Assistente de Modalidades</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <a class="brand" href="index.html"><img src="logo-next-fight.png" alt="Logo NEXT FIGHT"></a>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="modalidades.html">Modalidades</a>
+        <a href="planos.html">Planos</a>
+        <a href="horarios.html">Horários</a>
+        <a href="contato.html">Contato</a>
+        <a href="cadastro.html">Cadastro</a>
+        <a class="active" href="ia.html">IA</a>
+    </nav>
+    <button id="modoBtn" class="theme-btn">Modo Escuro</button>
+</header>
+
+<main>
+    <section class="page-head">
+        <p class="eyebrow">NEXT FIGHT IA</p>
+        <h1>Assistente de modalidades</h1>
+        <p>Responda algumas perguntas e descubra a modalidade ideal para você.</p>
+    </section>
+
+    <section class="section ia-section">
+        <div class="ia-chat">
+            <div class="ia-messages" id="iaMessages">
+                <!-- Mensagens geradas via JS -->
+            </div>
+
+            <div class="ia-quick" id="iaQuick">
+                <!-- Botões rápidos gerados via JS -->
+            </div>
+
+            <div class="ia-input-area">
+                <input type="text" id="iaInput" placeholder="Digite sua resposta..." autocomplete="off">
+                <button id="iaSend" class="ia-send-btn" aria-label="Enviar">
+                    <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                </button>
+            </div>
+        </div>
+        <p class="ia-disclaimer">As recomendações são sugestões baseadas nas suas respostas.</p>
+    </section>
+</main>
+
+<footer>
+    <div><img src="logo-next-fight.png" alt="NEXT FIGHT"></div>
+    <p>Força • Disciplina • Respeito</p>
+    <p class="small">© 2026 NEXT FIGHT — Disciplina, respeito e evolução.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
